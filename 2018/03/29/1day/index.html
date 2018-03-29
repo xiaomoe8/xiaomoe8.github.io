@@ -9,7 +9,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
-    <title>fi3ework&#39;s Studio</title>
+    <title>1day · fi3ework&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -65,6 +65,8 @@
 
     <link rel="preload" href= /css/style.css?v=20180317 as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" type="text/css" href= /css/mobile.css?v=20180317 media="(max-width: 980px)"/>
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         
     <link rel="icon" href= /assets/favicon.ico>
     <script>
@@ -175,12 +177,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >fi3ework&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">1day</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>fi3ework's Studio.</a>
 </header>
@@ -194,24 +207,61 @@
 
 
 
+height:50vh;
+
 >
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
+            1day
+            <!-- 404 -->
+            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2018/03/29</span>
+                
+                <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                    <span class="iconfont-archer">&#xe602;</span>
+                    <span id="busuanzi_value_page_pv"></span>
+                </span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
         
     </div>
 </div>
@@ -295,41 +345,66 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/03/29/1day/" >
-                
-                    <span>1day</span>
-            </a>
-            <div class="abstract-content">
-                大家好，我是申浩，这是我第一次打卡~昨天和今天的学习内容主要有以下两大部分一.git安装，网上安装，测试是否成功用  黑框命令 git –version1.配置用户信息
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="大家好，我是申浩，这是我第一次打卡"><a href="#大家好，我是申浩，这是我第一次打卡" class="headerlink" title="大家好，我是申浩，这是我第一次打卡~"></a>大家好，我是申浩，这是我第一次打卡~</h1><h2 id="昨天和今天的学习内容主要有以下两大部分"><a href="#昨天和今天的学习内容主要有以下两大部分" class="headerlink" title="昨天和今天的学习内容主要有以下两大部分"></a>昨天和今天的学习内容主要有以下两大部分</h2><h3 id="一-git安装，网上安装，测试是否成功用-黑框命令-git-–version"><a href="#一-git安装，网上安装，测试是否成功用-黑框命令-git-–version" class="headerlink" title="一.git安装，网上安装，测试是否成功用  黑框命令 git –version"></a>一.git安装，网上安装，测试是否成功用  黑框命令 git –version</h3><pre><code>1.配置用户信息
     git config  --global user.name &apos;zhangsan&apos;
 
 git config  --global  user.email &apos;xxx@163.com&apos;
 2.检查
     git config  --global user.name
 3.GIT的基本操作
+</code></pre><ul>
+<li>git  init  初始化仓库</li>
+<li><p>git status  查看当前仓库文件状态</p>
+<blockquote>
+<p>如果存在红色标记 说明有文件没有被暂存或者提交</p>
+</blockquote>
+</li>
+<li><p>git  add  xx.xx 添加单个文件到暂存区</p>
+</li>
+<li>git add .   添加所有文件到暂存区</li>
+<li>git commit -m ‘这是描述信息’  注意：-m一定不要忘记</li>
+<li>git checkout 02-git_test.html  可以把暂存区的某个文件取到工作区  注意：谨慎使用</li>
+<li>git log 查看日志  日志有hash值组成  </li>
+<li><p>git reset –hard asdfsdf(前七位即可)   可以恢复到相应的版本</p>
+<p>4.配置公钥<br>ssh-keygen -t rsa -C? “<a href="mailto:youremail@example.com" target="_blank" rel="noopener">youremail@example.com</a>“  配置公钥 在任意文档都可以配，和上传某个文件时候的GIT区别。<br>5.上传到GITHUB的profiles<br>  在这之前必选先 commit文件，存起来先~<br>  git remote add origin <a href="https://github.com/xiaomoe8/sdf.git" target="_blank" rel="noopener">https://github.com/xiaomoe8/sdf.git</a><br>  git push -u origin master</p>
+</li>
+</ul>
+<h3 id="二-github-搭建个github-pages，详情百度"><a href="#二-github-搭建个github-pages，详情百度" class="headerlink" title="二.github 搭建个github pages，详情百度"></a>二.github 搭建个github pages，详情百度</h3><pre><code>2.安装hexo，要在某个文档里边
+hexo的安装环境：node.js   和 git
+他俩的检查通过黑框检查即可， 比如 git --v
+然后hexo的安装步骤为
+1.npm install -g hexo-cli
+2.找到文件夹，通过hexo的命令 在本地创建blog代码框架 hexo init   &lt;filename&gt;
+3.本地预览一下 hexo server  {注意：Ctrl+C是退出预览} 网址是ocalhost:4000， 《更换皮肤略过》
+4.创建md（带有日期标题等等）的命令是    hexo new
+</code></pre><p>###三.发布BLOG<br>    1.首先要安装依赖库<br>    在本地黑框打开输入下边命令<br>    npm  install  hexo-deployer-git  –save<br>    npm  install  hexo-generator-json-content  –save<br>    2.配置git<br>    在当前文件创建git（如输入git init）<br>    然后找到当前博客的_config.yml<br>    把以下信息修改一下<br>    deploy:<br>      type: git<br>      repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:yourname/yourname.github.io.git<br>      branch: master<br>    3创建个public文件（public为镜像文件）<br>    命令框输入：hexo generate<br>    4最后输入 hexo deploy</p>
+<p>###最后最后最后，成功！</p>
 
-git  init  初始化仓库
-git status  查看当前仓库文件状态
+    </article>
+    <!-- 前后页  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
 
-如果存在红...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/03/29</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
+<!-- City版安装代码已完成 -->
     
-    <!-- paginator  -->
     
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -402,6 +477,24 @@ git status  查看当前仓库文件状态
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#大家好，我是申浩，这是我第一次打卡"><span class="toc-number">1.</span> <span class="toc-text">大家好，我是申浩，这是我第一次打卡~</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#昨天和今天的学习内容主要有以下两大部分"><span class="toc-number">1.1.</span> <span class="toc-text">昨天和今天的学习内容主要有以下两大部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-git安装，网上安装，测试是否成功用-黑框命令-git-–version"><span class="toc-number">1.1.1.</span> <span class="toc-text">一.git安装，网上安装，测试是否成功用  黑框命令 git –version</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-github-搭建个github-pages，详情百度"><span class="toc-number">1.1.2.</span> <span class="toc-text">二.github 搭建个github pages，详情百度</span></a></li></ol></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -497,6 +590,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
     
     </body>
 </html>
