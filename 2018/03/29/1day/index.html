@@ -371,7 +371,7 @@ git config  --global  user.email &apos;xxx@163.com&apos;
 <p>4.配置公钥<br>ssh-keygen -t rsa -C? “<a href="mailto:youremail@example.com" target="_blank" rel="noopener">youremail@example.com</a>“  配置公钥 在任意文档都可以配，这是和上传某个文件时候的GIT区别。<br>然后找到Administrator中的，id_rsa.pub，然后复制器内容<br>然后上传到GITHUB的profiles<br>  在这之前必选先 commit文件，存起来先~<br>  git remote add origin <a href="https://github.com/xiaomoe8/sdf.git" target="_blank" rel="noopener">https://github.com/xiaomoe8/sdf.git</a><br>  git push -u origin master</p>
 </li>
 </ul>
-<h3 id="二-首先github-搭建个github-pages，详情百度！！！！！"><a href="#二-首先github-搭建个github-pages，详情百度！！！！！" class="headerlink" title="二.首先github 搭建个github pages，详情百度！！！！！"></a>二.首先github 搭建个github pages，详情百度！！！！！</h3><pre><code>2.安装hexo，要在某个文档里边
+<h3 id="二-首先github-搭建个github-pages，详情百度！！找id-rsa-pub-然后打开，复制代码，粘贴到profile的SETTING里。"><a href="#二-首先github-搭建个github-pages，详情百度！！找id-rsa-pub-然后打开，复制代码，粘贴到profile的SETTING里。" class="headerlink" title="二.首先github 搭建个github pages，详情百度！！找id _rsa.pub 然后打开，复制代码，粘贴到profile的SETTING里。"></a>二.首先github 搭建个github pages，详情百度！！找id _rsa.pub 然后打开，复制代码，粘贴到profile的SETTING里。</h3><pre><code>2.安装hexo，要在某个文档里边
 hexo的安装环境：node.js   和 git
 他俩的检查通过黑框检查即可， 比如 git --v
 然后hexo的安装步骤为
@@ -379,9 +379,22 @@ hexo的安装环境：node.js   和 git
 2.找到文件夹，通过hexo的命令 在本地创建blog代码框架 hexo init   &lt;filename&gt;
 3.本地预览一下 hexo server  {注意：Ctrl+C是退出预览} 网址是ocalhost:4000， 《更换皮肤略过》
 4.创建md（带有日期标题等等）的命令是    hexo new
-</code></pre><p>###三.发布BLOG<br>    1.首先要安装依赖库<br>    在本地黑框打开输入下边命令<br>    npm  install  hexo-deployer-git  –save<br>    npm  install  hexo-generator-json-content  –save<br>    2.配置git<br>    在当前文件创建git（如输入git init）<br>    然后找到当前博客的_config.yml<br>    把以下信息修改一下<br>    deploy:<br>      type: git<br>      repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:yourname/yourname.github.io.git<br>      branch: master<br>    3创建个public文件（public为镜像文件）<br>    命令框输入：hexo generate<br>    4最后输入 hexo deploy</p>
-<p>###最后最后最后，成功！</p>
-<ul>
+</code></pre><h3 id="三-发布BLOG"><a href="#三-发布BLOG" class="headerlink" title="三.发布BLOG"></a>三.发布BLOG</h3><pre><code>1.首先要安装依赖库
+在本地黑框打开输入下边命令
+npm  install  hexo-deployer-git  --save
+npm  install  hexo-generator-json-content  --save
+2.配置git
+在当前文件创建git（如输入git init）
+然后找到当前博客的_config.yml
+把以下信息修改一下
+deploy:
+  type: git
+  repo: git@github.com:yourname/yourname.github.io.git
+  branch: master
+3创建个public文件（public为镜像文件）
+命令框输入：hexo generate
+4最后输入 hexo deploy
+</code></pre><h3 id="最后最后最后，成功！"><a href="#最后最后最后，成功！" class="headerlink" title="最后最后最后，成功！"></a>最后最后最后，成功！</h3><ul>
 <li>修改 了</li>
 </ul>
 
@@ -501,7 +514,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#大家好，我是申浩，这是我第一次打卡"><span class="toc-number">1.</span> <span class="toc-text">大家好，我是申浩，这是我第一次打卡~</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#昨天和今天的学习内容主要有以下两大部分"><span class="toc-number">1.1.</span> <span class="toc-text">昨天和今天的学习内容主要有以下两大部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-git安装，网上安装，测试是否成功用-黑框命令-git-–version"><span class="toc-number">1.1.1.</span> <span class="toc-text">一.git安装，网上安装，测试是否成功用  黑框命令 git –version</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-首先github-搭建个github-pages，详情百度！！！！！"><span class="toc-number">1.1.2.</span> <span class="toc-text">二.首先github 搭建个github pages，详情百度！！！！！</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#大家好，我是申浩，这是我第一次打卡"><span class="toc-number">1.</span> <span class="toc-text">大家好，我是申浩，这是我第一次打卡~</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#昨天和今天的学习内容主要有以下两大部分"><span class="toc-number">1.1.</span> <span class="toc-text">昨天和今天的学习内容主要有以下两大部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-git安装，网上安装，测试是否成功用-黑框命令-git-–version"><span class="toc-number">1.1.1.</span> <span class="toc-text">一.git安装，网上安装，测试是否成功用  黑框命令 git –version</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-首先github-搭建个github-pages，详情百度！！找id-rsa-pub-然后打开，复制代码，粘贴到profile的SETTING里。"><span class="toc-number">1.1.2.</span> <span class="toc-text">二.首先github 搭建个github pages，详情百度！！找id _rsa.pub 然后打开，复制代码，粘贴到profile的SETTING里。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三-发布BLOG"><span class="toc-number">1.1.3.</span> <span class="toc-text">三.发布BLOG</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#最后最后最后，成功！"><span class="toc-number">1.1.4.</span> <span class="toc-text">最后最后最后，成功！</span></a></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -532,12 +545,33 @@ top:50vh;
     
     
     
-    <div class="total-archive"> Total : 2 </div>
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 3 </div>
     
     <div class="post-archive">
     
     
     
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2018/03/30/3/" >[Untitled Post]</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
     
     <div class="archive-year"> 2018 </div>
     <ul class="year-list">
